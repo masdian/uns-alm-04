@@ -1,6 +1,6 @@
 ---
 title: "Aljabar Linier Matriks"
-subtitle: "Pertemuan 03 <br> Determinan"
+subtitle: "Pertemuan 04 <br> Invers Matriks"
 author: "oleh Riana Hadiana"
 institute: "Universitas Serang Raya"
 #date: "updated: `r Sys.Date()`"
@@ -58,9 +58,9 @@ xaringanExtra::use_search(show_icon = TRUE)
 
 # .purple[**Outline**]
 
-- ## Ekspansi Baris dan Kolom<br>
-- ## Metode Sarrus<br>
-- ## Minor dan Kofaktor
+- ## Invers Matriks (matriks kebalikan) <br>
+- ## Operasi Baris Elementer<br>
+
 
 ]
 
@@ -75,7 +75,7 @@ xaringanExtra::use_search(show_icon = TRUE)
 
 class: center, middle, inverse
 
-# .red[**Ekspansi Baris dan Kofaktor**]
+# .red[**Invers Matriks**]
 
 
 ---
