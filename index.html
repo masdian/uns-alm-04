@@ -200,24 +200,17 @@ class: center, middle, inverse
 ---
 
 .pull.center[
-# **Sifat-Sifat Determinan**
+### **Menentukan Invers Matriks**
 ]
 
-### Jika `\(\textbf{A}\)` dan `\(\textbf{B}\)` adalah matrik persegi berukuran sama, maka   
-
-### `$$\text{det}(\textbf{AB})=\text{det}(\textbf{A})\times\text{det}(\textbf{B})$$`
-
-.pull-left[
-
-### `\(\textbf{A}=\begin{bmatrix} 3&amp;1 \\ 5&amp;2 \end{bmatrix}\)`
-### `\(\textbf{B}=\begin{bmatrix} 2&amp;-1 \\ -5&amp;3 \end{bmatrix}\)`
 
 
-]
+### Tentukan invers dari matriks `\(\textbf{A}=\begin{bmatrix} 4&amp;-3 \\ 3&amp;-2 \end{bmatrix}\)`
 
-.pull-right[
+### Invers dari matriks `\(\textbf{A}\)` adalah
 
-### `\(\textbf{AB}=\dots\)`
+
+### `$$\begin{align*} \textbf{A}^{-1} &amp;= \frac{1}{4(-2)-3(-3)}\begin{bmatrix} -2&amp;3 \\ -3&amp;4 \end{bmatrix} \\ &amp;= \frac{1}{-8+9}\begin{bmatrix} -2&amp;3 \\ -3&amp;4 \end{bmatrix} \\ &amp;= \begin{bmatrix} -2&amp;3 \\ -3&amp;4 \end{bmatrix}\end{align*}$$`
 
 ### `\(\text{det}(\textbf{A})=\dots\)`
 ### `\(\text{det}(\textbf{B})=\dots\)`
@@ -228,79 +221,133 @@ class: center, middle, inverse
 ---
 
 .pull.center[
-# **Sifat-Sifat Determinan**
-]
-
-### Jika matriks `\(\textbf{B}\)` memiliki unsur yang sama dengan matriks `\(\textbf{A}\)` kecuali pada satu baris ke- `\(i\)` dan `\(b_i=ca_i\)` maka
-
-### `$$\text{det}(\textbf{B})=c\times \text{det}(\textbf{A})$$`
+### **Menentukan Invers Matriks**]
 
 .pull-left[
 
-### `\(\textbf{A}=\begin{bmatrix} 3&amp;1 \\ \color{red}{\textbf{5}}&amp;\color{red}{\textbf{2}} \end{bmatrix}\)`
-### `\(\textbf{B}=\begin{bmatrix} 6&amp;2 \\ \color{red}{\textbf{5}}&amp;\color{red}{\textbf{2}} \end{bmatrix}\begin{matrix} \rightarrow&amp;2\times(\begin{matrix}3&amp;1\end{matrix}) \\ \quad \end{matrix}\)`
-
+### Tentukan invers dari matriks &lt;br&gt;&lt;br&gt; `\(\textbf{A}=\begin{bmatrix} 2&amp;3&amp;4 \\ 3&amp;4&amp;5 \\ 4&amp;5&amp;5 \end{bmatrix}\)`
 
 ]
 
 .pull-right[
 
-### `\(\text{det}(\textbf{A})=3(2)-1(5)=1\)`
-### `\(\text{det}(\textbf{B})=2\times \text{det}(\textbf{A})=2(1)=2\)`
+### Berikut adalah langkah-langkah pengerjaannya.
+
+1. ### Tentukan determinan matriks `\(\textbf{A}\)`
+1. ### Tentukan matriks minor `\(\textbf{A}\)`
+1. ### Tentukan matriks kofaktor `\(\textbf{A}\)`
+1. ### Tentukan inverse matriks `\(\textbf{A}\)`
 
 ]
 
 ---
 
 .pull.center[
-# **Sifat-Sifat Determinan**
-]
+### **Menentukan Invers Matriks**]
 
-### Jika `\(c\)` adalah sebuah konstanta dan `\(\textbf{A}\)` adalah matriks persegi berukuran `\(n \times n\)`, maka 
+- ### Menentukan determinan matriks `\(\textbf{A}=\begin{bmatrix} 2&amp;3&amp;4 \\ 3&amp;4&amp;5 \\ 4&amp;5&amp;5 \end{bmatrix}\)`
 
-### `$$\text{det}(c\textbf{A})=c^n\times \text{det}(\textbf{A})$$`
+#### .red[**menggunakan eskpansi baris ke-1**]
 
+### `$$\begin{align*} \text{det}(\textbf{A}) &amp;=2[4(5)-5(5)]-3[3(5)-5(4)]+4[(3(5)-4(4))] \\ &amp;= 2(20-25)-3(15-20)+4(15-16) \\ &amp;=-10+15-4 \\ &amp;=1 \end{align*}$$`
 
-
-### `\(\textbf{A}=\begin{bmatrix} 3&amp;1 \\ 5&amp;2 \end{bmatrix} \Rightarrow \text{det}(\textbf{A})=3(2)-1(5)=1\)`
-### `\(3\textbf{B}=\begin{bmatrix} 9&amp;3 \\ 15&amp;6 \end{bmatrix} \Rightarrow \text{det}(\textbf{A})=9(6)-3(15)=9\)`
-
+---
 
 .pull.center[
-### `\(\color{red}{\text{det}(\textbf{B})=3^2\times \text{det}(\textbf{A})=9 \times 1=9}\)`
+### **Menentukan Invers Matriks**]
+
+- ### Matriks minor `\(\textbf{A}=\begin{bmatrix} 2&amp;3&amp;4 \\ 3&amp;4&amp;5 \\ 4&amp;5&amp;5 \end{bmatrix} \Rightarrow \textbf{M}=\begin{bmatrix} -5&amp;-5&amp;-1 \\ -5&amp;-6&amp;-2 \\ -1&amp;-2&amp;-1 \end{bmatrix}\)`
+
+### `\(\begin{matrix} M_{11}=\begin{vmatrix} 4&amp;5 \\ 5&amp;5 \end{vmatrix}=\color{red}{-\textbf{5}} &amp; M_{12}=\begin{vmatrix} 3&amp;5 \\ 4&amp;5 \end{vmatrix}=\color{red}{-\textbf{5}} &amp; M_{13}=\begin{vmatrix} 3&amp;4 \\ 4&amp;5 \end{vmatrix}=\color{red}{-\textbf{1}}\\ M_{21}=\begin{vmatrix} 3&amp;4 \\ 5&amp;5 \end{vmatrix}=\color{red}{-\textbf{5}} &amp; M_{22}=\begin{vmatrix} 2&amp;4 \\ 4&amp;5 \end{vmatrix}=\color{red}{-\textbf{6}} &amp; M_{23}=\begin{vmatrix} 2&amp;3 \\ 4&amp;5 \end{vmatrix}=\color{red}{-\textbf{2}} \\ M_{31}=\begin{vmatrix} 3&amp;4 \\ 4&amp;5 \end{vmatrix}=\color{red}{-\textbf{1}} &amp; M_{32}=\begin{vmatrix} 2&amp;4 \\ 3&amp;5 \end{vmatrix}=\color{red}{-\textbf{2}} &amp; M_{33}=\begin{vmatrix} 2&amp;3 \\ 3&amp;4 \end{vmatrix}=\color{red}{-\textbf{1}}\end{matrix}\)`
+
+---
+
+.pull.center[
+### **Menentukan Invers Matriks**]
+
+- ### Matriks kofaktor `\(\textbf{A}=\begin{bmatrix} 2&amp;3&amp;4 \\ 3&amp;4&amp;5 \\ 4&amp;5&amp;5 \end{bmatrix}\)`
+
+### `$$\textbf{M}=\begin{bmatrix} -5&amp;-5&amp;-1 \\ -5&amp;-6&amp;-2 \\ -1&amp;-2&amp;-1 \end{bmatrix} \Rightarrow \begin{bmatrix} +&amp;-&amp;+ \\ -&amp;+&amp;- \\ +&amp;-&amp;+ \end{bmatrix} \Rightarrow  \textbf{C}=\begin{bmatrix} -5&amp;5&amp;-1 \\ 5&amp;-6&amp;2 \\ -1&amp;2&amp;-1 \end{bmatrix}$$`
+
+---
+
+.pull.center[
+### **Menentukan Invers Matriks**]
+
+- ### Invers matriks `\(\textbf{A}=\begin{bmatrix} 2&amp;3&amp;4 \\ 3&amp;4&amp;5 \\ 4&amp;5&amp;5 \end{bmatrix}\)`
+
+### `$$\textbf{A}^{-1}=\frac{1}{\text{det}(\textbf{A})}\textbf{C}^T=\frac{1}{1}\begin{bmatrix} -5&amp;5&amp;-1 \\ 5&amp;-6&amp;2 \\ -1&amp;2&amp;-1 \end{bmatrix}=\begin{bmatrix} -5&amp;5&amp;-1 \\ 5&amp;-6&amp;2 \\ -1&amp;2&amp;-1 \end{bmatrix}$$`
+
+### `$$\color{red}{\textbf{Buktikan!!!}}$$`
+
+---
+
+.pull.center[
+### **Menentukan Invers Matriks**]
+
+.pull-left[
+
+### Diketahui matriks `\(\textbf{A}=\begin{bmatrix} 1&amp;2 \\ 2&amp;1 \end{bmatrix}\)` dan `\(\textbf{C}=\begin{bmatrix} 5&amp;4 \\ 7&amp;2 \end{bmatrix}\)`. Jika `\(\textbf{AB}=\textbf{C}\)`, tentukan matriks `\(\textbf{B}\)`.
+
+]
+
+.pull-right[
+
+### .red[**Penyelesaian**]
+
+### `\(\begin{align*} \textbf{AB} &amp;=\textbf{C} \\ (\textbf{A}^{-1}\textbf{A})\textbf{B} &amp;= \textbf{A}^{-1}\textbf{C} \\ \textbf{I}\textbf{B} &amp;= \textbf{A}^{-1}\textbf{C} \\ \textbf{B} &amp;= \textbf{A}^{-1}\textbf{C} \\ \textbf{B} &amp;= \dots \end{align*}\)`
+
 ]
 
 ---
+
 class: center, middle, inverse
 
-# .red[**Metode Sarrus**]
+# .red[**Operasi Baris Elementer**]
 
 ---
 
 .pull.center[
-# **Metode Sarrus**]
+# **Operasi Baris Elementer**]
 
-### `\(\textbf{A}=\begin{bmatrix} a&amp;b&amp;c \\ d&amp;e&amp;f \\ g&amp;h&amp;i \end{bmatrix} \quad \Rightarrow \quad \text{Dengan ekspansi baris (baris ke-1)}\)`
+### Terdapat 3 macam operasi baris elementer
 
-### `\(\begin{align*}\text{det}(\textbf{A})&amp;=a\times\text{det}\begin{bmatrix} e&amp;f \\ h&amp;i \end{bmatrix}-b\times\text{det}\begin{bmatrix} d&amp;f \\ g&amp;i \end{bmatrix}+c\times\text{det}\begin{bmatrix} d&amp;e \\ g&amp;h \end{bmatrix} \\ &amp;= a(ei-fh)-b(di-fg)+c(dh-eg) \\ &amp;=\color{green}{aei}+\color{green}{bfg}+\color{green}{cdh}-\color{red}{ceg}-\color{red}{afh}-\color{red}{bdi}\end{align*}\)`
-
----
-
-.pull.center[
-# **Metode Sarrus**]
-
-### `\(\textbf{A}=\begin{bmatrix} a&amp;b&amp;c \\ d&amp;e&amp;f \\ g&amp;h&amp;i \end{bmatrix}  \Rightarrow \text{det}(\textbf{A})= \color{green}{aei}+\color{green}{bfg}+\color{green}{cdh}-\color{red}{ceg}-\color{red}{afh}-\color{red}{bdi}\)`
-
-### `$$\begin{bmatrix} a&amp;b&amp;c \\ d&amp;e&amp;f \\ g&amp;h&amp;i \end{bmatrix} \begin{matrix} a&amp;b \\ d&amp;e \\ g&amp;h \end{matrix}$$`
+1. ### `\(B_{i(k)}\)` : mengalikan baris ke- `\(i\)` dengan suatu konstanta `\(k\)`
+1. ### `\(B_{ij}\)` : menukar baris ke- `\(i\)` dengan baris ke- `\(j\)`
+1. ### `\(B_{ij(k)}\)` : mengalikan baris ke- `\(j\)` dengan suatu konstanta `\(k\)`, kemudian menjumlahkannya dengan baris ke- `\(i\)`
 
 ---
 
 .pull.center[
-# **Metode Sarrus**]
+### **Operasi Baris Elementer**]
 
-### `\(\textbf{A}=\begin{bmatrix} 1&amp;5&amp;1 \\ 0&amp;4&amp;2 \\ 0&amp;0&amp;1 \end{bmatrix}\hspace{5cm} \begin{bmatrix} 1&amp;5&amp;1 \\ 0&amp;4&amp;2 \\ 0&amp;0&amp;1 \end{bmatrix} \begin{matrix} 1&amp;5 \\ 0&amp;4 \\ 0&amp;0 \end{matrix}\)`
-&lt;br&gt;
-### `\(\begin{align*}|\textbf{A}|&amp;=\text{det}(\textbf{A})\\&amp;= 1(4)(1)+5(2)(0)+1(0)(0)-0(4)(1)-0(2)(1)-1(0)(5) \\ &amp;= 4+0+0-0-0-0 \\ &amp;= 4 \end{align*}\)`
+#### `\(\textbf{A}=\begin{bmatrix} 1&amp;2&amp;1 \\ 3&amp;0&amp;2 \\ 2&amp;3&amp;1 \end{bmatrix}\)`
+
+#### Baris ke-1 kalikan dengan 2 `\(\Rightarrow B_{1(2)}\)`
+
+`$$B_{1(2)}\textbf{A}=\begin{bmatrix} 2&amp;4&amp;2 \\ 3&amp;0&amp;2 \\ 2&amp;3&amp;1 \end{bmatrix} \hspace{3cm} \textbf{A}=\begin{bmatrix} 1&amp;2&amp;1 \\ 3&amp;0&amp;2 \\ 2&amp;3&amp;1 \end{bmatrix} \xrightarrow{B_{1(2)}} \begin{bmatrix} 2&amp;4&amp;2 \\ 3&amp;0&amp;2 \\ 2&amp;3&amp;1 \end{bmatrix}$$`
+
+
+
+#### Baris ke-2 ditukar dengan baris ke-3 `\(\Rightarrow B_{23}\)`
+
+`$$B_{23}\textbf{A}=\begin{bmatrix} 1&amp;2&amp;1 \\ 2&amp;3&amp;1 \\ 3&amp;0&amp;2 \end{bmatrix} \hspace{3cm} \textbf{A}=\begin{bmatrix} 1&amp;2&amp;1 \\ 3&amp;0&amp;2 \\ 2&amp;3&amp;1 \end{bmatrix} \xrightarrow{B_{23}} \begin{bmatrix} 1&amp;2&amp;1 \\ 2&amp;3&amp;1 \\ 3&amp;0&amp;2 \end{bmatrix}$$`
+---
+
+.pull.center[
+### **Operasi Baris Elementer**]
+
+#### `\(\textbf{A}=\begin{bmatrix} 1&amp;2&amp;1 \\ 3&amp;0&amp;2 \\ 2&amp;3&amp;1 \end{bmatrix}\)`
+
+#### Baris ke-1 kalikan dengan 2 dan ditambahkan ke baris ke-3 `\(\Rightarrow B_{31(2)}\)`
+
+`$$B_{31(2)}\textbf{A}=\begin{bmatrix} 1&amp;2&amp;1 \\ 3&amp;0&amp;2 \\ 4&amp;7&amp;3 \end{bmatrix} \hspace{3cm} \textbf{A}=\begin{bmatrix} 1&amp;2&amp;1 \\ 3&amp;0&amp;2 \\ 2&amp;3&amp;1 \end{bmatrix} \xrightarrow{B_{31(2)}} \begin{bmatrix} 1&amp;2&amp;1 \\ 3&amp;0&amp;2 \\ 4&amp;7&amp;3 \end{bmatrix}$$`
+
+
+
+#### Baris ke-1 kalikan dengan `\(-3\)` dan ditambahkan ke baris ke-2 `\(\Rightarrow B_{21(-3)}\)`
+
+`$$B_{21(3)}\textbf{A}=\begin{bmatrix} 1&amp;2&amp;1 \\ 0&amp;-6&amp;-1 \\ 3&amp;0&amp;2 \end{bmatrix} \hspace{3cm} \textbf{A}=\begin{bmatrix} 1&amp;2&amp;1 \\ 3&amp;0&amp;2 \\ 2&amp;3&amp;1 \end{bmatrix} \xrightarrow{B_{21(3)}} \begin{bmatrix} 1&amp;2&amp;1 \\ 0&amp;-6&amp;-1 \\ 3&amp;0&amp;2 \end{bmatrix}$$`
 
 ---
 
