@@ -85,11 +85,11 @@ class: center, middle, inverse
 
 ### $\textbf{A}$ adalah matriks berukuran $n\times n$. Invers matriks bagi $\textbf{A}$ dilambangkan dengan $\textbf{A}^{-1}$ adalah matriks yang memenuhi $\textbf{AA}^{-1}=\textbf{A}^{-1}\textbf{A}=\textbf{I}_{n}$
 
-### $\textbf{A}=\begin{bmatrix} 3&1 \\ 2&1 \end{bmatrix} \quad \textbf{A}^{-1}=\begin{bmatrix} 1&-1 \\ -2&-3 \end{bmatrix}$
+### $\textbf{A}=\begin{bmatrix} 3&1 \\ 2&1 \end{bmatrix} \quad \textbf{A}^{-1}=\begin{bmatrix} 1&-1 \\ -2&3 \end{bmatrix}$
 
-### $\textbf{AA}^{-1}=\begin{bmatrix} 3&1 \\ 2&1 \end{bmatrix} \begin{bmatrix} 1&-1 \\ -2&-3 \end{bmatrix}=\begin{bmatrix} \hspace{1cm}&\hspace{1cm} \\ \hspace{1cm}&\hspace{1cm} \end{bmatrix}$
+### $\textbf{AA}^{-1}=\begin{bmatrix} 3&1 \\ 2&1 \end{bmatrix} \begin{bmatrix} 1&-1 \\ -2&3 \end{bmatrix}=\begin{bmatrix} \hspace{1cm}&\hspace{1cm} \\ \hspace{1cm}&\hspace{1cm} \end{bmatrix}$
 
-### $\textbf{A}^{-1}\textbf{A}=\begin{bmatrix} 1&-1 \\ -2&-3 \end{bmatrix} \begin{bmatrix} 3&1 \\ 2&1 \end{bmatrix}=\begin{bmatrix} \hspace{1cm}&\hspace{1cm} \\ \hspace{1cm}&\hspace{1cm} \end{bmatrix}$
+### $\textbf{A}^{-1}\textbf{A}=\begin{bmatrix} 1&-1 \\ -2&3 \end{bmatrix} \begin{bmatrix} 3&1 \\ 2&1 \end{bmatrix}=\begin{bmatrix} \hspace{1cm}&\hspace{1cm} \\ \hspace{1cm}&\hspace{1cm} \end{bmatrix}$
 
 ---
 
